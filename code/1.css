@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif
+}
+
+#content-post {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px
+}
+
+#text-reading {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333
+}
+
+#text-timer {
+    margin-top: 20px;
+    font-size: 18px
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px
+}
+
+select,
+input[type="range"],
+button {
+    appearance: none;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background-color: #00f;
+    cursor: pointer
+}
+
+select {
+    width: 150px
+}
+
+input[type="range"] {
+    width: 150px;
+    background: linear-gradient(to right, #f44336, #4caf50)
+}
+
+button {
+    width: 80px;
+    background: #00f
+}
+
+.play-icon,
+.pause-icon {
+    font-size: 24px;
+    color: #fff;
+    display: none
+}
+
+.play-icon {
+    display: initial
+}
+
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #f44336;
+    animation: typing 1s steps(30, end), blink-caret .75s step-end infinite
+}
+
+.text-reading {
+    overflow: auto
+}
+
+.rvNotification .rvButtonAllow {
+    background-color: #00f;
+    color: #fff
+}
+
+.rvNotification .rvButtonDeny {
+    background-color: #00f;
+    color: #fff
+}
+
+.rvNotification .rvTextRow {
+    color: #333
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #f44336
+    }
+}
